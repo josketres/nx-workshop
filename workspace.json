@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "api": "apps/api",
     "feature-game-detail": {
       "projectType": "library",
       "root": "libs/feature-game-detail",
