@@ -31,18 +31,18 @@
   },
   "generators": {
     "@nrwl/angular:application": {
-      "style": "scss",
+      "style": "css",
       "linter": "eslint",
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
     },
     "@nrwl/angular:library": {
-      "style": "scss",
+      "style": "css",
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "css"
     }
   },
   "defaultProject": "store"

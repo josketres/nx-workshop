@@ -27,6 +27,7 @@
       },
       "tags": []
     },
+    "libs-store-util-formatters": "libs/libs/store/util-formatters",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
   }
