@@ -1,6 +1,32 @@
 {
   "version": 2,
   "projects": {
+    "feature-game-detail": {
+      "projectType": "library",
+      "root": "libs/feature-game-detail",
+      "sourceRoot": "libs/feature-game-detail/src",
+      "prefix": "bg-hoard",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-game-detail"],
+          "options": {
+            "jestConfig": "libs/feature-game-detail/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature-game-detail/src/**/*.ts",
+              "libs/feature-game-detail/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "libs-store-ui-shared": {
       "projectType": "library",
       "root": "libs/libs/store/ui-shared",
