@@ -1,6 +1,32 @@
 {
   "version": 2,
   "projects": {
+    "libs-store-ui-shared": {
+      "projectType": "library",
+      "root": "libs/libs/store/ui-shared",
+      "sourceRoot": "libs/libs/store/ui-shared/src",
+      "prefix": "bg-hoard",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/libs/store/ui-shared"],
+          "options": {
+            "jestConfig": "libs/libs/store/ui-shared/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/libs/store/ui-shared/src/**/*.ts",
+              "libs/libs/store/ui-shared/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
   }
