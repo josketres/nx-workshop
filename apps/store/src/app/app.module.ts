@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
-import { LibsStoreUiSharedModule } from '@bg-hoard/libs/store/ui-shared';
+import { LibsStoreUiSharedModule } from '@bg-hoard/store-ui-shared';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

@@ -28,17 +28,19 @@
       },
       "tags": []
     },
-    "libs-store-ui-shared": {
+    "store": "apps/store",
+    "store-e2e": "apps/store-e2e",
+    "store-ui-shared": {
       "projectType": "library",
-      "root": "libs/libs/store/ui-shared",
-      "sourceRoot": "libs/libs/store/ui-shared/src",
+      "root": "libs/store/ui-shared",
+      "sourceRoot": "libs/store/ui-shared/src",
       "prefix": "bg-hoard",
       "targets": {
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/libs/store/ui-shared"],
+          "outputs": ["coverage/libs/store/ui-shared"],
           "options": {
-            "jestConfig": "libs/libs/store/ui-shared/jest.config.js",
+            "jestConfig": "libs/store/ui-shared/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -46,17 +48,14 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/libs/store/ui-shared/src/**/*.ts",
-              "libs/libs/store/ui-shared/src/**/*.html"
+              "libs/store/ui-shared/src/**/*.ts",
+              "libs/store/ui-shared/src/**/*.html"
             ]
           }
         }
       },
       "tags": []
     },
-    "store": "apps/store",
-    "store-e2e": "apps/store-e2e",
-    "store-util-formatters": "libs/store/util-formatters",
     "util-interface": {
       "root": "libs/util-interface",
       "sourceRoot": "libs/util-interface/src",
