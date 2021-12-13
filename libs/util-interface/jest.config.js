@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'libs-store-util-formatters',
-  preset: '../../../../jest.preset.js',
+  displayName: 'util-interface',
+  preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -10,5 +10,5 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../../coverage/libs/libs/store/util-formatters',
+  coverageDirectory: '../../coverage/libs/util-interface',
 };

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { formatRating } from '@bg-hoard/libs/store/util-formatters';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Game } from '@bg-hoard/util-interface';
+import { formatRating } from '@bg-hoard/store/util-formatters';
 
 @Component({
   selector: 'bg-hoard-root',
@@ -9,11 +9,10 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Board Game Hoard';
-  games: Observable<any>;
-  formatRating = formatRating;
-
-  constructor(client: HttpClient) {
-    this.games = client.get('/api/games');
+  constructor(private client: HttpClient) {
   }
+
+  title = 'Board Game Hoard';
+  formatRating = formatRating;
+  games = this.client.get<Game[]>('/api/games');
 }

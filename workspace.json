@@ -2,29 +2,6 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "api-util-interface": {
-      "root": "libs/api/util-interface",
-      "sourceRoot": "libs/api/util-interface/src",
-      "projectType": "library",
-      "targets": {
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["libs/api/util-interface/**/*.ts"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/api/util-interface"],
-          "options": {
-            "jestConfig": "libs/api/util-interface/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "tags": []
-    },
     "feature-game-detail": {
       "projectType": "library",
       "root": "libs/feature-game-detail",
@@ -77,8 +54,31 @@
       },
       "tags": []
     },
-    "libs-store-util-formatters": "libs/libs/store/util-formatters",
     "store": "apps/store",
-    "store-e2e": "apps/store-e2e"
+    "store-e2e": "apps/store-e2e",
+    "store-util-formatters": "libs/store/util-formatters",
+    "util-interface": {
+      "root": "libs/util-interface",
+      "sourceRoot": "libs/util-interface/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/util-interface/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-interface"],
+          "options": {
+            "jestConfig": "libs/util-interface/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    }
   }
 }
