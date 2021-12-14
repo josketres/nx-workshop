@@ -2,7 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "api-util-notification": "libs/api/util-notification",
+    "api-util-notifications": "libs/api/util-notifications",
     "feature-game-detail": "libs/feature-game-detail",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e",

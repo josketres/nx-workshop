@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Game } from '@bg-hoard/util-interface';
-import { sendNotification } from '@bg-hoard/api/util-notification';
+import { sendNotification } from '@bg-hoard/api-util-notifications';
 
 const games: Game[] = [
   {
@@ -41,7 +41,7 @@ export class AppService {
   }
 
   getGame(id: string): Game {
-    sendNotification("foo")
+    sendNotification('foo');
     return games.find((game) => game.id === id);
   }
 }

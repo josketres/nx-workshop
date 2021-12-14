@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'api-util-notification',
+  displayName: 'api-util-notifications',
   preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -10,5 +10,5 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/api/util-notification',
+  coverageDirectory: '../../../coverage/libs/api/util-notifications',
 };
