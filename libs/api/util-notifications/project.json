@@ -19,5 +19,5 @@
       }
     }
   },
-  "tags": ["type:util", "scope:api"]
+  "tags": ["type:util", "scope:foo"]
 }
