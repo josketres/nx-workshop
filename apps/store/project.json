@@ -102,10 +102,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "outputs": [],
       "options": {
-        "commands": [
-          "nx build store",
-          "npx surge dist/apps/store ${SURGE_DOMAIN_STORE} --token ${SURGE_TOKEN}"
-        ],
+        "command": "npx surge dist/apps/store ${SURGE_DOMAIN_STORE} --token ${SURGE_TOKEN}",
         "parallel": false
       }
     }
