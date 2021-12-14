@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Game } from '@bg-hoard/util-interface';
 import { formatRating } from '@bg-hoard/store/util-formatters';
+import { sendNotification } from '@bg-hoard/api/util-notification';
 
 @Component({
   selector: 'bg-hoard-root',
@@ -10,6 +11,7 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 })
 export class AppComponent {
   constructor(private client: HttpClient) {
+    sendNotification("foo")
   }
 
   title = 'Board Game Hoard';
