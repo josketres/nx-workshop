@@ -1,6 +1,6 @@
 {
-  "root": "libs/store/ui-shared",
-  "sourceRoot": "libs/store/ui-shared/src",
+  "root": "libs/util-interface",
+  "sourceRoot": "libs/util-interface/src",
   "projectType": "library",
   "targets": {
     "lint": {
@@ -10,23 +10,23 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/store/ui-shared/**/*.ts"
+          "libs/util-interface/**/*.ts"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/store/ui-shared"
+        "coverage/libs/util-interface"
       ],
       "options": {
-        "jestConfig": "libs/store/ui-shared/jest.config.js",
+        "jestConfig": "libs/util-interface/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
   "tags": [
-    "scope:store",
-    "type:lib"
+    "scope:shared",
+    "type:util"
   ]
 }
