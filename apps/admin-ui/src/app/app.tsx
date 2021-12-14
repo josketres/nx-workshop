@@ -6,7 +6,7 @@ import { Route, Link } from 'react-router-dom';
 export function App() {
   return (
     <>
-      <NxWelcome title="admin-ui" />
+      <NxWelcome title="admin-ui xx" />
       <div />
 
       {/* START: routes */}

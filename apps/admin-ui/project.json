@@ -70,7 +70,7 @@
       "options": {
         "commands": [
           "nx build admin-ui",
-          "npx surge dist/apps/store ${SURGE_DOMAIN_STORE} --token ${SURGE_TOKEN}"
+          "npx surge dist/apps/store ${SURGE_DOMAIN_ADMIN_UI} --token ${SURGE_TOKEN}"
         ],
         "parallel": false
       }
