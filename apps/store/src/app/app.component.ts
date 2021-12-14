@@ -10,7 +10,7 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 })
 export class AppComponent {
   constructor(private client: HttpClient) {
-    console.log('component constructed');
+    console.log('component constructed x');
   }
 
   title = 'Board Game Hoard';
