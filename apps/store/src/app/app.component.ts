@@ -6,10 +6,11 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 @Component({
   selector: 'bg-hoard-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   constructor(private client: HttpClient) {
+    console.log('component constructed x');
   }
 
   title = 'Board Game Hoard';

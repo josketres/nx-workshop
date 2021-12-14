@@ -9,4 +9,4 @@ jobs:
     steps: # what steps it will perform
       - uses: actions/checkout@v1 # checkout whatever branch the PR is using
       - uses: bahmutov/npm-install@v1 # trigger an `npm install`
-      - run: npx nx affected --target=test --parallel=5
+      - run: npx nx affected --target=test --parallel --base=origin/main --head=HEAD
