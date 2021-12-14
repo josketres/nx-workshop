@@ -2,9 +2,6 @@ name: Run CI checks # The name will show up on the GitHub Actions dashboard
 
 on: [ pull_request ] # This workflow will run only on Pull Requests
 
-env:
-  NX_BRANCH: ${{ github.event.number || github.ref }}
-
 jobs:
   test-affected: # give our job an ID
     runs-on: ubuntu-latest # the image our job will run on
@@ -12,4 +9,4 @@ jobs:
     steps: # what steps it will perform
       - uses: actions/checkout@v1 # checkout whatever branch the PR is using
       - uses: bahmutov/npm-install@v1 # trigger an `npm install`
-      - run: npx nx affected --target=test --parallel=5
+      - run: npx nx affected --target=test --parallel --base=origin/main --head=HEAD
